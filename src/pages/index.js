@@ -118,13 +118,6 @@ class IndexPage extends React.Component {
 }
 
 class BlockButton extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      on: 0
-    }
-  }
-
   colorMap = {
     0: 'grey',
     1: 'red',
@@ -144,3 +137,9 @@ class BlockButton extends React.Component {
 }
 
 export default IndexPage
+
+
+window.addEventListener('contextmenu', function (e) { 
+  // do something here... 
+  e.preventDefault(); 
+}, false);
